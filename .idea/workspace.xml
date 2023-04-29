@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a72ee91b-09cd-4221-8174-5374a1c3a5eb" name="Changes" comment="Многомодульный проект Zerone-Network">
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/.gitlab-ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/api-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/api-gateway/src/main/java/ru/skillbox/zerone/gateway/ApiGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/api-gateway/src/main/java/ru/skillbox/zerone/gateway/configuration/GatewayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/api-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/api-gateway/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/eureka-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/eureka-server/src/main/java/ru/skillbox/zerone/eurekaserver/eurekaserver/EurekaServerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/eureka-server/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/eureka-server/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/openapi.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/tokens/StoredCredential" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/ZeroneAdminApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/config/CloudinaryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/config/CustomAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/config/EncoderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/config/properties/AvatarProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/config/properties/CloudinaryProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/controller/AllServicesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/controller/AvatarController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/controller/CommentsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/controller/SupportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/controller/swaggerdoc/SwaggerSupportController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/exception/StartAvatarException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/dto/ChoiceDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/dto/ChoiceListDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/dto/CommentDescriptionDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/dto/CommentModerationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/dto/ErrorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/dto/TotalCommentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/entity/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/entity/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/entity/SupportRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/enumerated/CommentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/model/enumerated/SupportRequestStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/repository/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/repository/FileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/repository/PostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/repository/SupportRequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/service/AvatarService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/service/CommentsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/service/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/service/SupportService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/java/ru/skillbox/zerone/admin/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/application-prod.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/css/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/css/light-bootstrap-dashboard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/fonts/nucleo-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/fonts/nucleo-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/fonts/nucleo-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/fonts/nucleo-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/fonts/nucleo-icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/apple-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/default-avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/faces/face-0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/faces/face-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/faces/face-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/faces/face-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/faces/face-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/faces/face-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/faces/face-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/faces/face-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/faces/tim_vector.jpe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/full-screen-image-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/loading-bubbles.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/mask.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/new_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/sidebar-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/sidebar-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/sidebar-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/sidebar-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/sidebar-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/img/tim_80x80.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/js/core/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/js/core/jquery.3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/js/core/popper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/js/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/js/light-bootstrap-dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/js/plugins/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/js/plugins/bootstrap-notify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/js/plugins/bootstrap-switch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/js/plugins/chartist.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/js/plugins/nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_alerts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_bootstrap-switch.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_checkbox-radio-switch.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_footers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_inputs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_navbars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_partial-nucleo-icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_sidebar-and-main-panel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_chartist.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_inputs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_labels.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_morphing-buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_navbars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_social-buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_tabs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_transparency.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/mixins/_vendor-prefixes.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/plugins/_animate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/lbd/plugins/_datetime-picker.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/static/assets/sass/light-bootstrap-dashboard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/all-services.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/avatars.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/comment-description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/comment-edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/comment-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/fragments/common-head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/fragments/common-navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/fragments/common-sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/support-answer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/support-choice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-admin/src/main/resources/templates/template.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/ZeroneBackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/aspect/DriveLoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/aspect/JpaUserDetailsLoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/aspect/LoginServiceLoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/aspect/MailServiceLoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/aspect/UserRepositoryLoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/aspect/UserServiceLoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/CloudinaryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/EncoderConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/GoogleDriveConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/MailServiceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/OpenApiConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/SocketIOConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/VKWebClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/properties/CloudinaryProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/properties/GoogleDriveProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/properties/SocketIOProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/configuration/properties/VKWebClientProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/AuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/ChangeEmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/CommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/ControllerAdvisor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/DialogsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/FriendsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/LikeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/NotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/PlatformController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/StorageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/SupportRequestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/TagsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/ValidationHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerAuthenticationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerChangeEmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerCommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerDialogsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerFriendsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerNotificationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerPlatformController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerPostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerStorageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerSupportRequestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerTagsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/controller/swaggerdoc/SwaggerUsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/BlacklistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/ChangeEmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/CommentNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/DialogException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/FriendshipException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/NotificationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/NotificationPermissionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/PostCreationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/PostNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/RecommendationNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/RegistrationCompleteException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/TagNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/UserAlreadyExistException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/UserAndAuthorNotEqualsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/UserNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/VKAPIException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/ZeroneException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/exception/ZeroneSocketException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/handler/SocketIOHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/mapstruct/CommentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/mapstruct/DialogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/mapstruct/MessageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/mapstruct/PostMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/mapstruct/PostMapperDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/mapstruct/SocketUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/mapstruct/SupportRequestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/mapstruct/TagMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/mapstruct/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/mapstruct/UserMapperDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/AuthRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/ChangeEmailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/ChangePasswordDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/CommentRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/DialogRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/IsFriendsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/LikeRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/MessageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/MessageRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/NotificationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/NotificationSettingDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/PostRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/RegisterConfirmRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/RegisterRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/SupportRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/request/TagDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/BasicEntityDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/CommentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/CommonListResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/CommonResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/CountDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/DialogDataDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/LikeData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/LikesCountResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/MessageDataDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/MessageResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/PostDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/StatusFriendDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/StorageDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/VKCityResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/VKCountryResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/response/WriteCommentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/socket/request/AuthRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/socket/request/ReadMessagesDataDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/socket/request/TypingDataDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/socket/response/SocketListResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/socket/response/SocketMessageDataDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/socket/response/SocketNotificationDataDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/socket/response/SocketUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/socket/response/StartTypingResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/dto/socket/response/StopTypingResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/BlacklistToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/BlockHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/ChangeEmailHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/Dialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/Friendship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/Like.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/Notification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/NotificationSetting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/PostFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/PostToTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/Recommendation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/SupportRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/Tag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/entity/WebSocketConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/enumerated/ActionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/enumerated/CommentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/enumerated/FriendshipStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/enumerated/LikeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/enumerated/NotificationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/enumerated/PostType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/enumerated/ReadStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/enumerated/SupportRequestStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/model/enumerated/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/BlacklistRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/BlockHistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/ChangeEmailHistoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/CommentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/CountryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/DialogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/FileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/FriendshipRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/LikeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/MessageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/NotificationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/NotificationSettingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/PostFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/PostRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/PostToTagRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/RecommendationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/SupportRequestRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/TagRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/repository/WebSocketConnectionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/security/FilterChainExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/security/JwtTokenFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/security/JwtTokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/security/UserAccessFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/BlacklistService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/CommentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/DialogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/DriveManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/DriveService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/FriendService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/JpaUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/KafkaMessageProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/LikeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/MailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/NotificationSettingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/PlatformService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/PostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/SocketIOService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/StorageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/SupportRequestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/TagService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/service/VKRestClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/util/CurrentUserUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/util/ResponseUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/java/ru/skillbox/zerone/backend/util/ValidationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/application-muryginds.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/application-prod.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/application-vladimir.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/credentials.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/add-tag-table-constraint.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/change-blacklist-token-type.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/country-table-added.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/entity.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/file-database-added.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/insert-into-role.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/insert-test-data.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/recommendation-entity.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/remove-message-permission-type.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/test-data/insert-into-comment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/test-data/insert-into-friendship.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/test-data/insert-into-like.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/test-data/insert-into-post.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/test-data/insert-into-support_request.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/test-data/insert-into-user-and-user2role.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/changeset/type.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/db/changelog/db.changelog-master.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/AbstractIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/controller/AccountControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/controller/AuthenticationControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/controller/FriendsControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/controller/PostControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/controller/TagControllerIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/repository/WebSocketConnectionRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/service/DialogServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/service/DialogServiceUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/service/FriendServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/service/LoginServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/service/PostServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/service/SearchServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/service/TestCommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/service/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/testData/PostMockUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/java/ru/skillbox/zerone/backend/testData/UserMockUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/resources/application-test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/resources/mock-current-user-insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/resources/mock-dialog-insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/resources/mock-my-tags-insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/resources/mock-posts-insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/resources/mock-tags-insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/resources/mock-user-insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/resources/mockito-extensions/org.mockito.plugins.MockMaker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/resources/search-service-mock-data-insert.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zerone-backend-multimodule/zerone-backend/src/test/resources/truncate-all-users-cascade.sql" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2P696dObsPo8EJjy4usNhZ7gcw2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/skillbox/Zerone-Network",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\skillbox\Zerone-Network" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\skillbox\Zerone-Network" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a72ee91b-09cd-4221-8174-5374a1c3a5eb" name="Changes" comment="" />
+      <created>1682766489876</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682766489876</updated>
+      <workItem from="1682766491264" duration="258000" />
+    </task>
+    <task id="LOCAL-00001" summary="Многомодульный проект Zerone-Network">
+      <created>1682766634277</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682766634277</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Многомодульный проект Zerone-Network" />
+    <option name="LAST_COMMIT_MESSAGE" value="Многомодульный проект Zerone-Network" />
+  </component>
+</project>

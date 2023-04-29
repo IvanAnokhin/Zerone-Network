@@ -1,0 +1,133 @@
+variables:
+  MAVEN_OPTS: -Dmaven.repo.local=.m2/repository   # place storage for cache
+
+image: maven:3.8.7-eclipse-temurin-19
+
+stages:          # List of stages for jobs, and their order of execution 
+  - migrate
+  - build
+  - test
+  - sonarqube
+  - package
+  - deploy
+
+build-job:       # This job runs in the build stage, which runs first. 
+  stage: build
+  tags:
+    - students
+
+  script:
+    - echo "Compiling the code $CI_JOB_STAGE... $DEV_USER"
+    - "mvn compile"
+
+  cache:
+    paths:
+      - .m2/repository
+      - target
+
+migration-job:
+  stage: migrate
+  image: liquibase/liquibase
+  only:
+    - master
+  tags:
+    - students
+  script:
+    - echo "Liquibase migrations started"
+    - "cd zerone-backend/src/main/resources/"
+    - "liquibase update --url=$DATABASE_URL --username=$DATABASE_USERNAME --password=$DATABASE_PASSWORD --changeLogFile=$CHANGELOG_PATH"
+
+test-job:
+  stage: test
+  tags:
+    - students
+
+  script:
+    - echo "Maven test started"
+    - "mvn test"
+
+  cache:
+    paths:
+      - .m2/repository
+      - target
+  artifacts:
+    when: always
+    reports:
+      junit:
+        - '*/target/surefire-reports/TEST-*.xml'
+        - '*/target/failsafe-reports/TEST-*.xml'
+
+
+sonarqube-check:
+  stage:
+    sonarqube
+  tags:
+    - students
+  variables:
+    SONAR_USER_HOME: "${CI_PROJECT_DIR}/.sonar"
+    GIT_DEPTH: "0"
+  cache:
+    paths:
+      - .sonar/cache
+  script:
+    - echo "Sonarqube check started"
+    - "mvn verify sonar:sonar -Dsonar.projectKey=javapro_team34_zerone_backend_AYcJWhGuf3krGjKJWJH6 -Dsonar.login=$SONAR_LOGIN -Dsonar.password=$SONAR_PASSWORD -Dsonar.java.coveragePlugin=jacoco -Dsonar.java.binaries=target/classes"
+  allow_failure: true
+
+package-job:
+  stage: package
+  tags:
+    - students
+
+  only:
+    - master
+
+  script:
+    - echo "Maven packaging started"
+    - "mvn package -Dmaven.test.skip"
+
+  artifacts:
+    paths:
+      - '*/target/*.jar'
+  cache:
+    policy: pull
+    paths:
+      - .m2/repository
+      - target
+
+deploy_dev_server:
+  stage: deploy
+  tags:
+    - students
+
+  only:
+    - master
+
+  before_script:
+    - which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y ) # which ищет исполняемый файл
+    #|| если выполнение первой команды статус 1 (не удачно), то переход ко второй.
+    #update - Обновление базы данных пакетов. install - устанавливает пакет openssh-client
+    - eval $(ssh-agent -s) #типо execute immediate запускает ssh_agent в дочернем процессе от оболочки
+    - echo "$SSH_PRIVATE_KEY" | ssh-add -  # |-выходн данные первой команды передает во вторую
+    #приватный ключ передаёт во вторую команду ssh-add, т.е. для авторизации в агенте
+    - mkdir -p ~/.ssh #создание директории, если такой нет. -p создаст все директории, указанные в пути. Check: ls -la
+    - chmod 700 ~/.ssh #выдаём права только владельцу на чтение, запись и выполнение
+    - ssh-keyscan $DEV_HOST >> ~/.ssh/known_hosts #собирает ключи с хоста 195.161.62.32
+    #и перенаправляет вывод в файл, но не перезаписывает его, а добавляет в конец
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - chmod 644 ~/.ssh/known_hosts #владельцу чтение, запись. Для группы и других - чтение
+  script:
+    - ssh $DEV_USER@$DEV_HOST "[ ! -f $DEV_APP_PATH/backend.jar ] || mv $DEV_APP_PATH/backend.jar $BACKUP/backend-build-$CI_PIPELINE_ID.jar"
+    - ssh $DEV_USER@$DEV_HOST "[ ! -f $DEV_APP_PATH/admin.jar ] || mv $DEV_APP_PATH/admin.jar $BACKUP/admin-build-$CI_PIPELINE_ID.jar"
+    - ssh $DEV_USER@$DEV_HOST "[ ! -f $DEV_APP_PATH/api-gateway.jar ] || mv $DEV_APP_PATH/api-gateway.jar $BACKUP/api-gateway-build-$CI_PIPELINE_ID.jar"
+    - ssh $DEV_USER@$DEV_HOST "[ ! -f $DEV_APP_PATH/eureka-server.jar ] || mv $DEV_APP_PATH/eureka-server.jar $BACKUP/eureka-server-build-$CI_PIPELINE_ID.jar"
+    #подключ. ч/з ssh.        check path exists and он стандартный.   Перемещение файла из одной директори в другую с переименованием(бэкап)
+    - ls -lR
+    - scp eureka-server/target/eureka-server-0.0.1-SNAPSHOT.jar $DEV_USER@$DEV_HOST:$DEV_APP_PATH/eureka-server.jar
+    - scp api-gateway/target/api-gateway-0.0.1-SNAPSHOT.jar $DEV_USER@$DEV_HOST:$DEV_APP_PATH/api-gateway.jar
+    - scp zerone-admin/target/zerone-admin-0.0.1-SNAPSHOT.jar $DEV_USER@$DEV_HOST:$DEV_APP_PATH/admin.jar
+    - scp zerone-backend/target/zerone-backend-0.0.1-SNAPSHOT.jar $DEV_USER@$DEV_HOST:$DEV_APP_PATH/backend.jar
+    - scp /builds/javapro_team34/zerone-backend-multimodule/docker-compose.yaml $DEV_USER@$DEV_HOST:$USER_HOME_PATH/
+    #копирование файла из репо на сервер
+    - ssh $DEV_USER@$DEV_HOST "docker compose down"
+    - ssh $DEV_USER@$DEV_HOST "docker compose up -d"

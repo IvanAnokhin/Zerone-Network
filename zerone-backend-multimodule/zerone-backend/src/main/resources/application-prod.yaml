@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    show-sql: false
+  liquibase:
+    enabled: false
+  kafka:
+    bootstrap-servers: "kafka:9092"
+
+mail-service:
+  front-address: http://zerone-network.ru
